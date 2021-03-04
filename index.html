@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://kit.fontawesome.com/250a320d6d.js" crossorigin="anonymous"></script>
+  <title>Weather APP</title>
+  <meta charset="UTF-8" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="weather-app">
+      <form class="search-form">
+        <div class="row">
+          <div class="col-7">
+            <input type="search" placeholder="Enter a city ..." autofocus="on" class="form-control" id="input-city" />
+          </div>
+          <div class="col-2">
+            <input type="submit" value="Search" class="btn btn-primary" id="search-city" shadow-sm w-100 />
+          </div>
+          <div class="col-2">
+            <input type="submit" value="Current" class="btn btn-success" id="current-temperature" shadow-sm w-100 />
+          </div>
+        </div>
+      </form>
+      <h1></h1>
+      <h3></h3>
+      <ul>
+        <li class="show-date"></li>
+        <li class="show-time"></li>
+      </ul>
+      <div class="row">
+        <div class="col-6">
+          <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="cloudy icon"
+            class="weather-icon" />
+          <span class="temperature"></span>
+          <span class="units"><a href="#" class="toCelsius">°C</a>|<a href="#" class="toFahrenhied">°F</a></span>
+        </div>
+        <div class="col-6">
+          <ul>
+            <li><span id="description"></span></li>
+            <li>Humidity <span id="humidity"></span>%</li>
+            <li>Wind <span id="wind"></span>m/s</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+
+</html>
