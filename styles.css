@@ -58,3 +58,11 @@ a {
   margin-bottom: 20px;
   text-align: center;
 }
+
+.github-link {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.design-by {
+  text-align: center;
+}
